@@ -1,4 +1,4 @@
-package com.company;
+package com.company.chapter4;
 
 public class SecondsAndMinutesChallenge {
 

@@ -1,7 +1,9 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-/.idea
+idea/
+out/
+zip-bestanden/
 # Datasource local storage ignored files
 /../../../../../../../:\Users\jeffr\OneDrive\Bureaublad\Udemy programming\.idea/dataSources/
 /dataSources.local.xml
