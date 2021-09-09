@@ -1,6 +1,12 @@
 package com.company;
 
+import com.company.chapter7.billsBurgers.DeluxeBurger;
+import com.company.chapter7.billsBurgers.Hamburger;
+import com.company.chapter7.billsBurgers.HealthyBurger;
 import com.company.chapter7.encapsulationChallenge.Printer;
+import com.company.chapter7.polymorphism.Car;
+import com.company.chapter7.polymorphism.Ford;
+import com.company.chapter7.polymorphism.Opel;
 
 public class Main {
 
@@ -70,11 +76,41 @@ public class Main {
 //        EnhancedPlayer player = new EnhancedPlayer("Jeff",75, "Sword");
 //        System.out.println("Initial health is " + player.getHitPoints());
 
-        Printer printer = new Printer(50,true);
-        System.out.println("Initial page count = " + printer.getPagesPrinted());
-        int pagesPrinted = printer.printPage(4);
-        System.out.println("Pages printed was " +  pagesPrinted + " new total print count for printer  " + printer.getPagesPrinted());
+//        Printer printer = new Printer(50,true);
+//        System.out.println("Initial page count = " + printer.getPagesPrinted());
+//        int pagesPrinted = printer.printPage(4);
+//        System.out.println("Pages printed was " +  pagesPrinted + " new total print count for printer  " + printer.getPagesPrinted());
+//
+//        Car car = new Car(4,"44-VR-KB", "Default");
+//        System.out.println(car.startEngine());
+//        System.out.println(car.accelerate());
+//        System.out.println(car.brake());
+//
+//        Opel opel = new Opel(4,"44-VR-KB", "Opel");
+//        System.out.println(opel.startEngine());
+//        System.out.println(opel.accelerate());
+//        System.out.println(opel.brake());
+//
+//        Ford ford = new Ford(8,"55-LC-WK", "Ford");
+//        System.out.println(ford.startEngine());
+//        System.out.println(ford.accelerate());
+//        System.out.println(ford.brake());
 
+        Hamburger hamburger = new Hamburger("burger", "Beef", 3.56,"White");
+        double price = hamburger.itemizeHamburger();
+        hamburger.addHamburgerAddition1("cheese", 1.00);
+        hamburger.addHamburgerAddition2("lettuce", 0.50);
+        hamburger.addHamburgerAddition3("tomato", 0.30);
+        hamburger.addHamburgerAddition4("bacon", 1.50);
+        System.out.println("Total burger price is " + hamburger.itemizeHamburger());
+
+        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+        healthyBurger.addHealthyAddition1("egg", 5.43);
+        healthyBurger.addHealthyAddition1("Raddish", 1.30);
+        System.out.println("Total Healthy burger price is " + healthyBurger.itemizeHamburger());
+
+        DeluxeBurger deluxeBurger = new DeluxeBurger();
+        deluxeBurger.itemizeHamburger();
 
 
 
